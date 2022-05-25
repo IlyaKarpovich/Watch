@@ -1,0 +1,308 @@
+
+*{
+    
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    font-family: 'Open Sans', sans-serif;
+
+}
+body{
+    overflow: hidden;
+}
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../media/bg_8.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    overflow: hidden;
+    animation: changeBg 20s forwards;
+}
+@keyframes changeBg{
+
+    20%{
+        background-image: url(../media/bg_8.jpg);
+    }
+    40%{
+        background-image: url(../media/bg_1.jpg);
+    }
+    60%{
+        background-image: url(../media/bg_2.jpg);
+    }
+    80%{
+        background-image: url(../media/bg_9.jpg);
+    }
+    100%{
+        background-image: url(../media/bg_5.jpg);
+    }
+    
+
+}
+.main_block{
+width: 100%;
+height: 90%;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+}
+.twitter_container{
+    position: absolute;
+    top: 120px;
+    left: 120px;
+    width: 300px;
+    height: 200px;
+    background: url(../media/twitter-bg.png) no-repeat;
+    background-position: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-family: 'Open Sans', sans-serif;
+}
+.twitter {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.q1{
+width: 100%;
+height: 100%;
+margin-bottom : 1.5em;
+animation: changeTwit 10s infinite ;
+}
+
+.watch{
+    width: 560px;
+    height: 560px;
+    background-image: url(../media/39.png ) ,url(../media/pngwing.com.png);
+    background-repeat: no-repeat,no-repeat;
+    background-position: center;
+    background-size: 515px 515px , 560px 560px;
+    filter: invert(1);
+    /* border: 3px solid rgb(0, 0, 0); */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        /* -webkit-box-reflect: below 4px linear-gradient(transparent,transparent,#0004); */
+}
+.watch::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgb(107, 107, 107);
+    z-index: 10;
+}
+.hour,.minute,.second{
+    position: absolute;
+}
+.minutes,.hours,.seconds{
+    width: 100px;
+    height: 100px; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    border-radius: 50%;
+    filter: invert(1);
+}
+
+.hours::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 190px;
+    background: rgb(255, 255, 255);
+    z-index: 7;
+    border-radius: 6px 6px 0 0;
+}
+.minutes::before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 240px;
+    background: rgb(255, 255, 255);
+    z-index: 4;
+    border-radius: 6px 6px 0 0;
+}
+.seconds::before{
+    content: "";
+    position: absolute;
+    width: 3px;
+    height: 290px;
+    background: rgb(255, 255, 255);
+    z-index: 5;
+    
+}
+.time {
+    font-family: 'Open Sans', sans-serif;
+    /* padding: 1em; */
+    /* margin: 1em auto; */
+    margin-bottom: 30%;
+    /* border: 1px solid lightgrey; */
+    /* width: 8em; */
+    text-align: center;
+    font-size:1.8em;
+    /* background: white; */
+    color: rgb(255, 255, 255);
+    align-self:flex-end;
+    filter: invert(1);
+}
+.calendar{
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    width: 150px;
+    background: #ffffff42;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004); */
+}
+.calendar #month{
+    position: relative;
+    padding: 5px 10px;
+    background: linear-gradient(rgba(255, 255, 255, 0.005)) ;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0;
+}
+.calendar #dayName{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+}
+.calendar #dayNumber{
+    margin: 0px;
+    font-size: 70px;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+}
+.calendar #year{
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+.menu{
+    width: 100%;
+    height: 8%;
+}
+ul{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+li{
+    /* margin: 3px; */
+    cursor: pointer;
+    transition: .6s;
+    height: fit-content;
+    
+}
+li:hover{
+    transform: scale(1.1);
+    
+}
+.title{
+    font-size: 72px;
+    margin-bottom: 6%;
+}
+
+form{
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+input{
+    width: 440px;
+    color: rgb(255, 255, 255);
+    background: none;
+    border: none;
+    border-bottom:1px #fff solid ;
+    font-size: 36px;
+}
+input[type="submit"]{
+    border: 1px solid #fff;
+    cursor: pointer;
+
+}
+.service{
+    display: none;
+    width: 600px;
+    position: absolute;
+    transform: translateY(30%) ;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 999;
+    flex-direction: column;
+    overflow: hidden;
+}
+.service_icons{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+.service_icons li{
+    margin: 2.5em;
+}
+.about{
+    display: none;
+    width: 600px;
+    position: absolute;
+    transform: translateY(30%);
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 999;
+    overflow: hidden;
+}
+.contact{
+    display: none;
+    width: 600px;
+    width: 100%;
+    position: absolute;
+    transform: translateY(30%) ;
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Open Sans', sans-serif;
+    z-index: 999;
+    overflow: hidden;
+
+}
+form{
+    width:100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    
+}

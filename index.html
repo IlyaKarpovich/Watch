@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch</title>
+    <link rel="stylesheet" href="css/resetcss.css">
+    <link rel="stylesheet" href="css/style.css">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<style>@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');</style>
+</head>
+<body>
+    <div class="wrapper" >
+        <div class="main_block">
+            <div class="twitter_container">
+                <div class="twitter">
+					<div class="q1">
+						<p>
+						</p>
+					</div>
+					<div class="q1">
+						<p>
+						</p>
+					</div>
+                <div class="q1">
+						<p>
+							https://newsapi.org/v2/everything?q=tesla&from=2022-04-24&sortBy=publishedAt&apiKey=20c267cc1cb941d99a7784b207f7b560
+						</p>
+					</div>
+                </div>
+		</div>
+            <div class="watch animate__animated animate__slideInUp ">
+                <div class="hour">
+                <div class="hours"></div>
+                </div>
+                <div class="minute">
+                <div class="minutes"></div>
+                </div>
+                <div class="second">
+                <div class="seconds"></div>
+                </div>
+                <div class="time"></div>
+            </div>
+			<script src="app.js"></script>
+			<div class="calendar">
+				<p id="month"></p>
+				<p id="dayName"></p>
+				<p id="dayNumber"></p>
+				<p id="year"></p>
+			</div>
+	</div>
+        <nav class="menu">
+            <ul>
+                <li onclick="ShowWatch()">HOME</li>
+                <li onclick="textShowService()">SERVICE</li>
+                <li onclick="textShowAbout()">ABOUT</li>
+                <li onclick="textShowContact()">CONTACT</li>
+            </ul>
+        </nav>
+		<div class="service">
+			
+    <h2 class="title animate__animated animate__backInLeft animate__slow">What we do?</h2>
+			<ul class="service_icons">
+				<li>
+				<img src="media/promotion-icon.png" width="70px" height="50px">
+				<p>Lorem</p>
+				</li>
+				<li>
+				<img src="media/web-desing-icon.png" width="70px" height="50px">
+				<p>Lorem</p>
+			    </li>
+				<li>
+				<img src="media/photography-icon.png" width="70px" height="50px">
+				<p>Lorem</p>
+				</li>
+			</ul>
+                <p class="animate__animated animate__slideInUp" >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget nibh at libero fringilla adipiscing nec ut leo. 
+                    Etiam nec purus arcu. Morbi sollicitudin at risus id malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+                    Etiam sed tincidunt arcu. Donec molestie ante sapien, sed molestie est euismod eget. Maecenas ac metus accumsan, scelerisque massa sed, porta est. 
+                    Aliquam ut mollis mi. Cras id vulputate purus, ac sollicitudin ante.
+                </p>
+                <p  class="animate__animated animate__slideInUp">
+                    Integer condimentum eu lectus quis semper. Sed id metus magna. Morbi ultrices magna id euismod hendrerit. 
+                    Pellentesque nec mattis odio, vitae laoreet metus. Sed eget sollicitudin est, vitae accumsan nisi. Fusce consequat imperdiet venenatis.
+                    Integer mollis hendrerit facilisis. Praesent vel mattis enim. Integer fringilla et urna vitae rutrum.
+                </p>
+
+		</div>
+		<div class="about">
+			
+			<h2 class="title animate__animated animate__backInLeft animate__slow">Who we are?</h2>
+						<p class="animate__animated animate__slideInUp" >
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget nibh at libero fringilla adipiscing nec ut leo. 
+							Etiam nec purus arcu. Morbi sollicitudin at risus id malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
+							Etiam sed tincidunt arcu. Donec molestie ante sapien, sed molestie est euismod eget. Maecenas ac metus accumsan, scelerisque massa sed, porta est. 
+							Aliquam ut mollis mi. Cras id vulputate purus, ac sollicitudin ante.
+						</p>
+						<p  class="animate__animated animate__slideInUp">
+							Integer condimentum eu lectus quis semper. Sed id metus magna. Morbi ultrices magna id euismod hendrerit. 
+							Pellentesque nec mattis odio, vitae laoreet metus. Sed eget sollicitudin est, vitae accumsan nisi. Fusce consequat imperdiet venenatis.
+							Integer mollis hendrerit facilisis. Praesent vel mattis enim. Integer fringilla et urna vitae rutrum.
+						</p>
+		
+				</div>
+				<div class="contact">
+			
+								<h2 class="title animate__animated animate__backInLeft animate__slow">Get in touch</h2>
+								<p class="animate__animated animate__slideInUp" >
+									Lexington Avenue. New York, NY <br> P:(123)-456 789.email@domain.com
+								</p>
+								<form>
+								<input type="text" placeholder="Name">
+								<input type="email" placeholder="Email">
+								<input type="text" placeholder="Message">
+								<input type="submit" value="Send Message">
+							    </form>
+						</div>
+    </div>
+
+    <script async src="js/script.js"></script>
+</body>
+</html>
