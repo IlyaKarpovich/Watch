@@ -12,16 +12,17 @@ body{
 .wrapper{
     width: 100%;
     height: 100vh;
-    background-image: url(../media/bg_8.jpg);
+    background-image:  url(../media/bg_8.jpg),url(../media/bg_1.jpg),url(../media/bg_2.jpg),url(../media/bg_9.jpg),url(../media/bg_5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: .3s;
+    transition: .5s;
     overflow: hidden;
-    animation: changeBg 20s forwards;
+    animation: changeBg 30s forwards;
+    animation-delay: 5s;
 }
 @keyframes changeBg{
 
@@ -29,7 +30,7 @@ body{
         background-image: url(../media/bg_8.jpg);
     }
     40%{
-        background-image: url(../media/bg_1.jpg);
+        background-image:  url(../media/bg_1.jpg);
     }
     60%{
         background-image: url(../media/bg_2.jpg);
@@ -40,8 +41,6 @@ body{
     100%{
         background-image: url(../media/bg_5.jpg);
     }
-    
-
 }
 .main_block{
 width: 100%;
@@ -51,36 +50,51 @@ justify-content: center;
 align-items: center;
 overflow: hidden;
 }
-.twitter_container{
+.weather{
     position: absolute;
     top: 120px;
     left: 120px;
-    width: 300px;
-    height: 200px;
-    background: url(../media/twitter-bg.png) no-repeat;
+    width: 150px;
+    height: 130px;
+    /* background: #ffffff42; */
+    border-radius: 20px;
+    /* background: url(../media/twitter-bg.png) no-repeat; */
     background-position: left;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
-    align-items: flex-end;
+    align-items: center;
+    /* align-items: flex-end; */
     font-family: 'Open Sans', sans-serif;
 }
-.twitter {
+.weather_city {
     width: 100%;
     height: 100%;
     color: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    overflow: hidden;
+    justify-content: space-evenly;
+    align-items: center;
+    /* overflow: hidden; */
+    /* border-radius: 5px; */
 }
-
-.q1{
+.weather_city_kiev{
+    font-size: 2.5em;
+    color: blue;
+}
+.weather_city_deg {
+    color: gold;
+    font-size: 2em;
+}
+.weather_city_description {
+    font-size: 1.1em;
+}
+/* .q1{
 width: 100%;
 height: 100%;
 margin-bottom : 1.5em;
 animation: changeTwit 10s infinite ;
-}
+} */
 
 .watch{
     width: 560px;

@@ -52,9 +52,10 @@ tick();
 
 setInterval(tick, 100);
 //Cмена твитов
-function changeTwit() {
-    let 
-}
+
+
+
+
 //Смена блоков меню
 function ShowWatch() {
     let service = document.querySelector('.service');
