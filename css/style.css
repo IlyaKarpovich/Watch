@@ -139,6 +139,7 @@ overflow: hidden;
     color:rgb(10, 10, 255);
 }
 .watch{
+    position: absolute;
     width: 560px;
     height: 560px;
     background-image: url(../media/39.png ) ,url(../media/pngwing.com.png);
@@ -252,9 +253,12 @@ overflow: hidden;
 .menu{
     width: 100%;
     height: 8%;
+    display: flex;
+    justify-content: space-between;
 }
+
 ul{
-    width: 30%;
+    width: 20%;
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -264,13 +268,18 @@ ul{
 }
 li{
     cursor: pointer;
-    transition: .6s;
+    transition: .3s;
     height: fit-content;
-    
+    font-size: 1.0em;
 }
 li:hover{
     transform: scale(1.1);
     
+}
+.menu_social_items{
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
 }
 .title{
     font-size: 72px;
