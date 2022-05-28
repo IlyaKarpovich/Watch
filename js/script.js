@@ -2,13 +2,11 @@
 function calendar() {
 const lang = 'en-US';
 let date = new Date();
-
 let dayNumber = date.getDate();
 let dayName = date.toLocaleString(lang,{weekday: 'long'});
 let month = date.getMonth();
 let monthName = date.toLocaleString(lang,{month: 'long'});
 let year = date.getFullYear();
-
 document.getElementById('month').innerHTML = monthName;
 document.getElementById('dayName').innerHTML = dayName;
 document.getElementById('dayNumber').innerHTML = dayNumber;
@@ -21,23 +19,19 @@ function clock() {
     const minutesArrow = document.querySelector(".minutes");
     const secondsArrow = document.querySelector(".seconds");
     const deg = 6;
-
     setInterval(() => {
         const day = new Date();
         const hours = day.getHours() * 30;
         const minutes = day.getMinutes() * deg;
         const seconds = day.getSeconds() * deg;
-
         hoursArrow.style.transform = `rotateZ(${hours + (minutes / 12)}deg)`;
         minutesArrow.style.transform = `rotateZ(${minutes}deg)`;
         secondsArrow.style.transform = `rotateZ(${seconds}deg)`;
     }, 0)
-    
 }
 clock();
 // Цифров. часы
 const timeElement = document.querySelector('.time');
-
 const tick = () => {
     const now = new Date();
     const hours = now.getHours();
@@ -45,17 +39,9 @@ const tick = () => {
     const sec = now.getSeconds();
     const colon = sec % 2 === 0 ? ':' : ' ';
     timeElement.textContent = `TIME: ${hours}${colon}${min}${colon}${sec}`;
-    
 }
-
 tick();
-
 setInterval(tick, 100);
-//Cмена твитов
-
-
-
-
 //Смена блоков меню
 function ShowWatch() {
     let service = document.querySelector('.service');

@@ -17,22 +17,24 @@
         <div class="main_block">
             <div class="weather">
                 
-					<!-- <div class="weather_city">
-						<p class="weather_city_minsk">
-						</p>
-					</div> -->
-					<div class="weather_city">
-						<p class="weather_city_kiev">
-						</p>
-						<p class="weather_city_deg"></p>
-						<p class="weather_city_description"></p>
-						<!-- <p class="weather_pic"></p> -->
+				    <div class="weather_city_1">
+						<p class="weather_city_minsk"></p>
+						<p class="weather_city_minsk_deg"></p>
+						<p class="weather_city_minsk_description"></p>
+						<p class="weather_pic_minsk"></p>
+				    </div>
+					<div class="weather_city_2">
+						<p class="weather_city_kyiv"></p>
+						<p class="weather_city_kyiv_deg"></p>
+						<p class="weather_city_kyiv_description"></p>
+						<p class="weather_pic_kyiv"></p>
 					</div>
-                <!-- <div class="weather_city">
-						<p class="weather_city_nursultan">
-						</p>
-					</div> -->
-                
+					<div class="weather_city_3">
+						<p class="weather_city_nursultan"></p>
+						<p class="weather_city_nursultan_deg"></p>
+						<p class="weather_city_nursultan_description"></p>
+						<p class="weather_pic_nursultan"></p>
+					</div>
 		</div>
             <div class="watch animate__animated animate__slideInUp ">
                 <div class="hour">
@@ -46,14 +48,14 @@
                 </div>
                 <div class="time"></div>
             </div>
-			<script src="app.js"></script>
+			<script src="weatherApi.js"></script>
 			<div class="calendar">
 				<p id="month"></p>
 				<p id="dayName"></p>
 				<p id="dayNumber"></p>
 				<p id="year"></p>
 			</div>
-	</div>
+		</div>
         <nav class="menu">
             <ul>
                 <li onclick="ShowWatch()">HOME</li>
@@ -62,67 +64,61 @@
                 <li onclick="textShowContact()">CONTACT</li>
             </ul>
         </nav>
-		<div class="service">
-			
-    <h2 class="title animate__animated animate__backInLeft animate__slow">What we do?</h2>
-			<ul class="service_icons">
-				<li>
-				<img src="media/promotion-icon.png" width="70px" height="50px">
-				<p>Lorem</p>
-				</li>
-				<li>
-				<img src="media/web-desing-icon.png" width="70px" height="50px">
-				<p>Lorem</p>
-			    </li>
-				<li>
-				<img src="media/photography-icon.png" width="70px" height="50px">
-				<p>Lorem</p>
-				</li>
-			</ul>
-                <p class="animate__animated animate__slideInUp" >
+						<div class="service">
+    						<h2 class="title animate__animated animate__backInUp animate__slow">What we do?</h2>
+								<ul class="service_icons">
+									<li>
+										<img src="media/promotion-icon.png" width="70px" height="50px">
+										<p>Lorem</p>
+									</li>
+									<li>
+										<img src="media/web-desing-icon.png" width="70px" height="50px">
+										<p>Lorem</p>
+			    					</li>
+									<li>
+										<img src="media/photography-icon.png" width="70px" height="50px">
+										<p>Lorem</p>
+									</li>
+								</ul>
+                			<p class="animate__animated animate__slideInUp" >
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget nibh at libero fringilla adipiscing nec ut leo. 
                     Etiam nec purus arcu. Morbi sollicitudin at risus id malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
                     Etiam sed tincidunt arcu. Donec molestie ante sapien, sed molestie est euismod eget. Maecenas ac metus accumsan, scelerisque massa sed, porta est. 
                     Aliquam ut mollis mi. Cras id vulputate purus, ac sollicitudin ante.
-                </p>
-                <p  class="animate__animated animate__slideInUp">
+                			</p>
+                			<p  class="animate__animated animate__slideInUp">
                     Integer condimentum eu lectus quis semper. Sed id metus magna. Morbi ultrices magna id euismod hendrerit. 
                     Pellentesque nec mattis odio, vitae laoreet metus. Sed eget sollicitudin est, vitae accumsan nisi. Fusce consequat imperdiet venenatis.
                     Integer mollis hendrerit facilisis. Praesent vel mattis enim. Integer fringilla et urna vitae rutrum.
-                </p>
-
-		</div>
-		<div class="about">
-			
-			<h2 class="title animate__animated animate__backInLeft animate__slow">Who we are?</h2>
-						<p class="animate__animated animate__slideInUp" >
+                			</p>
+						</div>
+						<div class="about">
+							<h2 class="title animate__animated animate__backInUp animate__slow">Who we are?</h2>
+								<p class="animate__animated animate__slideInUp" >
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eget nibh at libero fringilla adipiscing nec ut leo. 
 							Etiam nec purus arcu. Morbi sollicitudin at risus id malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; 
 							Etiam sed tincidunt arcu. Donec molestie ante sapien, sed molestie est euismod eget. Maecenas ac metus accumsan, scelerisque massa sed, porta est. 
 							Aliquam ut mollis mi. Cras id vulputate purus, ac sollicitudin ante.
-						</p>
-						<p  class="animate__animated animate__slideInUp">
+								</p>
+								<p  class="animate__animated animate__slideInUp">
 							Integer condimentum eu lectus quis semper. Sed id metus magna. Morbi ultrices magna id euismod hendrerit. 
 							Pellentesque nec mattis odio, vitae laoreet metus. Sed eget sollicitudin est, vitae accumsan nisi. Fusce consequat imperdiet venenatis.
 							Integer mollis hendrerit facilisis. Praesent vel mattis enim. Integer fringilla et urna vitae rutrum.
-						</p>
-		
-				</div>
-				<div class="contact">
-			
-								<h2 class="title animate__animated animate__backInLeft animate__slow">Get in touch</h2>
+								</p>
+						</div>
+						<div class="contact">
+							<h2 class="title animate__animated animate__backInUp animate__slow">Get in touch</h2>
 								<p class="animate__animated animate__slideInUp" >
 									Lexington Avenue. New York, NY <br> P:(123)-456 789.email@domain.com
 								</p>
 								<form>
-								<input type="text" placeholder="Name">
-								<input type="email" placeholder="Email">
-								<input type="text" placeholder="Message">
-								<input type="submit" value="Send Message">
+									<input type="text" placeholder="Name">
+									<input type="email" placeholder="Email">
+									<input type="text" placeholder="Message">
+									<input type="submit" value="Send Message">
 							    </form>
 						</div>
     </div>
-
     <script async src="js/script.js"></script>
 </body>
 </html>
