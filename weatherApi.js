@@ -1,4 +1,4 @@
-// 9f87d187b38a438606427c49f6a786c3///key
+// 9f87d187b38a438606427c49f6a786c3///key Api for home project.  for important project api unshow
 // [53.9, 27.5667] minsk 
 
 //Minsk
@@ -44,16 +44,16 @@ function changeWeather() {
             minsk.classList = "weather_city_1 animate__animated animate__backOutUp animate__slow";
             kyiv.classList = "weather_city_2 animate__animated animate__bounceInUp animate__slow";
             kyiv.style.display = "flex";
-        }, "10000");
+        }, "6000");
         setTimeout(function () {
             kyiv.classList = "weather_city_2 animate__animated animate__backOutUp animate__slow";
             nursultan.classList = "weather_city_3 animate__animated animate__bounceInUp animate__slow";
             nursultan.style.display = "flex";
-        }, "20000");
+        }, "12000");
         setTimeout(function () {
             nursultan.classList = "weather_city_3 animate__animated animate__backOutUp animate__slow";
             minsk.classList = "weather_city_1 animate__animated animate__bounceInUp animate__slow";
-        },"30000")
-},40000);
+        },"18000")
+},25000);
 }
 changeWeather();
